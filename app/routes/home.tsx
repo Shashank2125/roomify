@@ -102,7 +102,6 @@ export default function Home() {
                       </div>
                   </div>
                   <div className="projects-grid">
-                  /* we can add real projects with real data */
                       {projects.map(({id,name,renderedImage,sourceImage,timestamp})=>(
                           <div className="project-card group">
                           <div className="preview">

@@ -7,7 +7,6 @@ import {
     imageUrlToPngBlob,
     isHostedUrl
 } from "./utils";
-import {blob} from "node:stream/consumers";
 export const getOrCreateHostingConfig=async ():Promise<HostingConfig | null>=>{
     const existing=(await puter.kv.get(HOSTING_CONFIG_KEY)) as HostingConfig | null;
     if (existing?.subdomain) return { subdomain: existing.subdomain };
